@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 :root {
     --main-color: #7510F7;
     --main-bg-color: #c196fa;
@@ -11,6 +12,7 @@
 .center{
     max-width: 75vw;
     margin:auto;
+    text-align: center;
 }
 .navbar{ 
     border: 2px solid black;
@@ -58,4 +60,14 @@
     color: white;
     background-color: var(--main-color);
     transition: all .3s ease-in-out;
+}
+.herotext{
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+    margin-top: 5%;
+}
+.herosubtitle{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 2%;
+    font-weight: lighter;
 }
