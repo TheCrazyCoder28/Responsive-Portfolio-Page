@@ -9,19 +9,22 @@
     margin: 0;
     padding: 0;
 }
+
 .center{
     max-width: 75vw;
-    margin:auto;
+    margin: auto;
     text-align: center;
 }
+
 .navbar{ 
     border: 2px solid black;
     padding: 23px 23px;
-    margin:12px;
+    margin: 12px;
     display: flex;
     justify-content: space-between;
      
 }
+
 .navbar li{
     list-style: none;
     padding: 0 12px;
@@ -37,6 +40,7 @@
 .navbar li a:hover{
      color: var(--main-color);
 }
+
 .nav-right{
     display: inline-flex;
     justify-content: flex-end;
@@ -69,12 +73,14 @@
     cursor: pointer;
     font-weight: bold;
 }
+
 .btn:hover{
     cursor: pointer;
     color: white;
     background-color: var(--main-color);
     transition: all .3s ease-in-out;
 }
+
 .herotext{
     font-family: 'Roboto', sans-serif;
     font-size: larger;
