@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 :root {
     --main-color: #7510F7;
     --main-bg-color: #c196fa;
@@ -8,23 +9,35 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 .center{
-    max-width: 75vw;
-    margin:auto;
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
     text-align: center;
 }
+
 .navbar{ 
     border: 2px solid black;
-    padding: 23px 23px;
-    margin:12px;
+    padding: 23px;
+    margin: 12px;
     display: flex;
     justify-content: space-between;
-     
 }
+
+@media screen and (max-width: 440px){
+
+    .navbar{
+        padding: 23px 0;
+        justify-content: space-around;
+    }
+}
+
 .navbar li{
     list-style: none;
-    padding: 0 12px;
+    /* padding: 0 12px; */
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
 }
@@ -37,10 +50,14 @@
 .navbar li a:hover{
      color: var(--main-color);
 }
+
 .nav-right{
-    display: inline-flex;
-    justify-content: flex-end;
+    width: 70%;
+    max-width: 300px;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
+    /* border: 1px solid red; */
 }
 
 .nav-right #pop{
@@ -55,8 +72,9 @@
     display: none;
 }
 
+
 .nav-left img{
-    width: 102px;
+    width: 70px;
 }
 
 .btn{
@@ -69,12 +87,21 @@
     cursor: pointer;
     font-weight: bold;
 }
+
+@media screen and (max-width: 370px){
+    
+    .btn{
+        padding: 10px;
+    }
+}
+
 .btn:hover{
     cursor: pointer;
     color: white;
     background-color: var(--main-color);
     transition: all .3s ease-in-out;
 }
+
 .herotext{
     font-family: 'Roboto', sans-serif;
     font-size: larger;
